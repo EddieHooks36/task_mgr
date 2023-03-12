@@ -2,7 +2,7 @@
 CREATE TABLE status(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(256)
-)
+);
 CREATE TABLE task (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     summary VARCHAR (256),
@@ -24,7 +24,7 @@ INSERT INTO task(
     summary,
     description,
     status_id
-) VALUES (
+)VALUES(
     "Do the laundry",
     "Put clothes in the washing machine",
     1
@@ -34,7 +34,7 @@ INSERT INTO task(
     summary,
     description,
    status_id
-) VALUES (
+)VALUES(
     "Buy groceries",
     "Detergent, produce",
     1
@@ -44,7 +44,7 @@ INSERT INTO task(
     summary,
     description,
     status_id
-) VALUES (
+)VALUES(
     "Clean shoes",
     "Put shoes a way",
     1
