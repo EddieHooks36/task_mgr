@@ -19,7 +19,7 @@ def output_formatter(results):
 
 def scan():
     conn = get_db()
-    cursor = conn.execute("SELECT * FROM task", ())
+    cursor = conn.execute("SELECT * FROM task",())
     results = cursor.fetchall()
     cursor.close()
     conn.close()
@@ -48,7 +48,7 @@ def insert (task_data):
     description,
     status_id,
     active,
-    ) VALUES(?, ?, ?, ?,)
+    ) VALUES(?, ?, ?, ?)
     """
     conn = get_db()
     conn.execute(statement, task_tuple)
